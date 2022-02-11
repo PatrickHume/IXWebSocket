@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall -Wextra -pedantic   CMakeFiles/demo.dir/main.cpp.o  -o demo  libixwebsocket.a /usr/lib/x86_64-linux-gnu/libssl.so /usr/lib/x86_64-linux-gnu/libcrypto.so /usr/lib/x86_64-linux-gnu/libz.so -pthread 

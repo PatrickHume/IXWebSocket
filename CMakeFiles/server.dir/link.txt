@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall -Wextra -pedantic   CMakeFiles/server.dir/home/csimage/cavel/server/server.cpp.o  -o /home/csimage/cavel/server/server  libixwebsocket.a /usr/lib/x86_64-linux-gnu/libssl.so /usr/lib/x86_64-linux-gnu/libcrypto.so /usr/lib/x86_64-linux-gnu/libz.so -pthread 
