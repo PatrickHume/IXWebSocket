@@ -317,3 +317,13 @@ if (BUILD_DEMO)
   add_executable(demo main.cpp)
   target_link_libraries(demo ixwebsocket) 
 endif()
+
+if (BUILD_CAVEL) 
+  add_executable(server server.cpp)
+  target_link_libraries(server ixwebsocket) 
+  set_target_properties(server PROPERTIES RUNTIME_OUTPUT_DIRECTORY "../server")
+
+  add_executable(client client.cpp)
+  target_link_libraries(client ixwebsocket) 
+  set_target_properties(client PROPERTIES RUNTIME_OUTPUT_DIRECTORY "../client")
+endif()
