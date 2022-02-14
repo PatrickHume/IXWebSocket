@@ -611,7 +611,7 @@ namespace ix
         return _username;
     }
     void WebSocket::setUsername(const std::string& username){
-        _username = username;
+        _username.assign(username);
     }
 
     const std::vector<std::string>& WebSocket::getSubProtocols()
