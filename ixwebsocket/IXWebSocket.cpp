@@ -50,8 +50,6 @@ namespace ix
                                                       WebSocketOpenInfo(),
                                                       WebSocketCloseInfo(code, reason, remote)));
             });
-        std::string _defaultName = "Undefined";
-        setUsername(_defaultName);
     }
 
     WebSocket::~WebSocket()
@@ -606,13 +604,6 @@ namespace ix
     {
         std::lock_guard<std::mutex> lock(_configMutex);
         _subProtocols.push_back(subProtocol);
-    }
-
-    std::string WebSocket::getUsername(){
-        return _username;
-    }
-    void WebSocket::setUsername(const std::string& username){
-        _username.assign(username);
     }
 
     const std::vector<std::string>& WebSocket::getSubProtocols()

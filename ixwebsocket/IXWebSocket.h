@@ -115,9 +115,6 @@ namespace ix
         uint32_t getMinWaitBetweenReconnectionRetries() const;
         const std::vector<std::string>& getSubProtocols();
 
-        std::string getUsername();
-        void setUsername(const std::string&);
-
     private:
         WebSocketSendInfo sendMessage(const IXWebSocketSendData& message,
                                       SendMessageKind sendMessageKind,
@@ -177,8 +174,6 @@ namespace ix
 
         // Subprotocols
         std::vector<std::string> _subProtocols;
-
-        std::string _username;
 
         friend class WebSocketServer;
     };
