@@ -50,7 +50,8 @@ namespace ix
                                                       WebSocketOpenInfo(),
                                                       WebSocketCloseInfo(code, reason, remote)));
             });
-        setUsername("Unnamed");
+        std::string _defaultName = "Undefined";
+        setUsername(_defaultName);
     }
 
     WebSocket::~WebSocket()
